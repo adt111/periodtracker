@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Period Tracker</h1>
+    <form id="cycleForm">
+        <label for="startDate">Start Date (dd-mm-yyyy):</label>
+        <input type="text" id="startDate" required>
+
+        <label for="endDate">End Date (dd-mm-yyyy):</label>
+        <input type="text" id="endDate" required>
+
+        <label for="symptomCount">Number of Symptoms:</label>
+        <input type="number" id="symptomCount" min="0" required>
+
+        <div id="symptomInputs"></div>
+
+        <button type="submit">Add Cycle</button>
+    </form>
+
+    <div id="message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
